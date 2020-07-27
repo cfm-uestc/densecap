@@ -2,7 +2,7 @@
 
 Run from pre-built, modified docker image.
 
-** Please make sure you have nvidia-docker (2) and set default docker runtime to `nvidia`.
+**Please make sure you have nvidia-docker (2) and set default docker runtime to `nvidia`.**
 
 ```bash
 # assume in HOST_DIR, you have a.jpg and dense_cap_late_fusion_sum.caffemodel
