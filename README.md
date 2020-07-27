@@ -1,3 +1,18 @@
+## Run
+
+Run from pre-built, modified docker image.
+
+** Please make sure you have nvidia-docker (2) and set default docker runtime to `nvidia`.
+
+```bash
+# assume in HOST_DIR, you have a.jpg and dense_cap_late_fusion_sum.caffemodel
+docker run -v /HOST_DIR:/mnt -it --gpus all zhongbazhu/densecap /bin/bash
+python ./lib/tools/demo.py --image /mnt/a.jpg --gpu 0 --net /mnt/dense_cap_late_fusion_sum.caffemodel
+```
+
+
+
+
 ## Dense Captioning with Joint Inference and Visual Context ##
 This repo is the released code of dense image captioning models described in the CVPR 2017 paper:
 ```
