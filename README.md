@@ -11,6 +11,17 @@ python ./lib/tools/demo.py --image /mnt/a.jpg --gpu 0 --net /mnt/dense_cap_late_
 ```
 
 
+## Compile Manually
+
+**Use the latest caffe**
+```bash
+make
+cd lib
+make
+cd ../python
+make
+```
+
 
 
 ## Dense Captioning with Joint Inference and Visual Context ##
